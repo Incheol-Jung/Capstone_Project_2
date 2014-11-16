@@ -39,14 +39,11 @@
     </bean>
     
 <!-- =========================== DAO DEFINITIONS : IBATIS IMPLEMENTATIONS ============ -->    
-
+	<bean id="RegisterService" class="com.incheol.myapp.service.RegisterService" />  
     <bean id="UserDao" class="com.incheol.myapp.dao.Userdao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
-    <bean id="Board" class="com.incheol.myapp.vo.Board">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
-        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
-    </bean>
-    <bean id="Category" class="com.incheol.myapp.vo.Category">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
-        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
-    </bean>
+    
+    <bean id="Board" class="com.incheol.myapp.vo.Board" />                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+    <bean id="Category" class="com.incheol.myapp.vo.Category" />                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
 </beans>
