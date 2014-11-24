@@ -1,0 +1,9 @@
+2014-11-23 15:30:50,236 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.incheol:myapp:1.0.0-BUILD-SNAPSHOT @ C:\Users\JIC\Downloads\Capstone_Project_2-master\Capstone_Project_2-master\pom.xml.
+2014-11-23 15:31:07,766 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-11-23 15:31:07,834 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-11-23 15:31:07,895 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-11-23 15:31:07,908 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-11-23 15:31:45,940 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-11-23 15:31:45,962 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-11-23 15:31:45,995 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-11-23 15:31:46,005 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource

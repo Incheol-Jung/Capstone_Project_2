@@ -44,6 +44,10 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     
-    <bean id="Board" class="com.incheol.myapp.vo.Board" />                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
-    <bean id="Category" class="com.incheol.myapp.vo.Category" />                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+    <bean id="Board" class="com.incheol.myapp.vo.Board" >
+    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+    <bean id="Category" class="com.incheol.myapp.vo.Category" >
+    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
 </beans>
