@@ -5,7 +5,72 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-11-23T13:37:25Z</updated>
+  <updated>2014-11-24T10:17:28Z</updated>
+  <entry>
+    <title>Spring Integration Java DSL 1.0 GA Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/24/spring-integration-java-dsl-1-0-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2014-11-24:1854</id>
+    <updated>2014-11-24T10:17:28Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+
+&lt;p&gt;As we promised in the Release Candidate &lt;a href="https://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released"&gt;blog post&lt;/a&gt;,
+we are pleased to announce that the Spring Integration Java DSL 1.0 GA is now available.
+As usual, use the &lt;a href="http://repo.springsource.org/release"&gt;Release Repository&lt;/a&gt; with Maven or Gradle,
+or download a
+&lt;a href="http://repo.spring.io/release/org/springframework/integration/spring-integration-java-dsl/1.0.0.RELEASE"&gt;distribution archive&lt;/a&gt;,
+to give it a spin.&lt;/p&gt;
+
+&lt;p&gt;See the project &lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/wiki/Spring-Integration-Java-DSL-Reference"&gt;home page&lt;/a&gt;
+for more information.&lt;/p&gt;
+
+&lt;p&gt;First of all, we are glad to share with you that on Nov 12, 2014, &lt;a href="http://dzone.com/research/guide-to-enterprise-integration"&gt;DZone research&lt;/a&gt;
+recognized Spring Integration as the leader in the ESB / Integration framework space, leading with 42% marketshare,
+in a publication of their recent survey results.
+And the report is the most popular DZone Guide in November, with more than 12 000 downloads already! Don't miss it: very
+exciting. We hope the release of the Spring Integration Java DSL adds more excitement!.&lt;/p&gt;
+
+&lt;p&gt;Many thanks to all contributors, including several who are new to the community.&lt;/p&gt;
+
+&lt;p&gt;The release includes just a few bug fixes, since the release candidate, and a lot of JavaDocs!&lt;/p&gt;
+
+&lt;p&gt;Not specifically related to the the release, I want to present here some resources on
+the matter.&lt;/p&gt;
+
+&lt;p&gt;We are observing many valuable DSL questions on &lt;a href="http://stackoverflow.com/tags/spring-integration"&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://spring.io/team/jlong"&gt;Josh Long&lt;/a&gt;'s
+&lt;a href="https://spring.io/blog/2014/11/15/building-a-spring-integration-4-1-websocket-endpoint"&gt;tech tip&lt;/a&gt; showing how we can use
+together Spring Boot, REST, Spring Integration 4.1 WebSocket support and Spring Integration Java DSL plus Java 8
+features.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;Jdbc Splitter&lt;/code&gt; implementation in the project
+&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/blob/master/src/test/java/org/springframework/integration/dsl/test/jdbc/JdbcTests.java"&gt;tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My &lt;a href="https://gist.github.com/artembilan/9bd32f5e899ef293b6c2"&gt;gist&lt;/a&gt; to demonstrate how we can use &lt;a href="https://github.com/reactor/reactor"&gt;Reactor&lt;/a&gt; &lt;code&gt;Stream&lt;/code&gt;s together with the Spring Integration Java DSL.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://spring.io/team/dsyer"&gt;Dave Syer&lt;/a&gt; has started to use Spring Integration Java DSL in the
+&lt;a href="https://github.com/spring-cloud/spring-cloud-bus"&gt;Spring Cloud Bus&lt;/a&gt; project.&lt;/p&gt;
+
+&lt;p&gt;Don't miss the &lt;a href="https://github.com/spring-projects/spring-integration-samples/tree/master/dsl/si4demo"&gt;si4demo&lt;/a&gt; to
+see the evolution of Spring Integration including the Java DSL, as shown at the 2014 SpringOne/2GX Conference. (Video should be available soon).&lt;/p&gt;
+
+&lt;p&gt;Especial thanks to &lt;a href="https://twitter.com/bijukunjummen"&gt;Biju Kunjummen&lt;/a&gt; who has done some nice articles on DZone to introduce Spring Integration Java DSL: &lt;a href="http://java.dzone.com/articles/spring-integration-java-dsl"&gt;http://java.dzone.com/articles/spring-integration-java-dsl&lt;/a&gt;, &lt;a href="http://java.dzone.com/articles/spring-integration-java-dsl-0"&gt;http://java.dzone.com/articles/spring-integration-java-dsl-0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And of course, with the latest &lt;a href="https://spring.io/blog/2014/11/19/spring-xd-1-1-m1-and-1-0-2-released"&gt;Spring XD&lt;/a&gt;, we
+can build Modules based on &lt;code&gt;@Configuration&lt;/code&gt; including Spring Integration Java DSL &lt;code&gt;IntegrationFlow&lt;/code&gt; definitions.&lt;/p&gt;
+
+&lt;p&gt;Just after this announcement I'm going to publish a &lt;code&gt;DSL Tutorial&lt;/code&gt; to explain concepts and features using the
+&lt;a href="https://github.com/spring-projects/spring-integration-samples/tree/master/dsl/cafe-dsl"&gt;Java DSL version of the Cafe Demo&lt;/a&gt; sample as material.&lt;/p&gt;
+
+&lt;p&gt;As always, we look forward to your comments and feedback (&lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; 
+(&lt;code&gt;spring-integration&lt;/code&gt; tag), &lt;a href="https://jira.spring.io/browse/INTEXT"&gt;Spring JIRA&lt;/a&gt;, 
+&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/issues"&gt;GitHub&lt;/a&gt;) and we very much welcome 
+&lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.md"&gt;contributions&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>"Bootiful" Java EE Support in Spring Boot 1.2</title>
     <link rel="alternate" href="https://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2" />
@@ -14,7 +79,7 @@
       <name>Josh Long</name>
     </author>
     <id>tag:spring.io,2014-11-23:1853</id>
-    <updated>2014-11-23T13:37:25Z</updated>
+    <updated>2014-11-23T13:37:00Z</updated>
     <content type="html">&lt;p&gt;In this blog, I want to look at - and demonstrate - some of the &lt;em&gt;many&lt;/em&gt; new features in &lt;a href="http://spring.io/projects/spring-boot"&gt;Spring Boot 1.2&lt;/a&gt; that make the lives of those coming from, or otherwise building on, Java EE easier.  &lt;/p&gt;
 
 &lt;p&gt;It's worth mentioning that a lot of this support has been possible with Spring before, of course, but now with Spring Boot 1.2, it's just so darned easy!&lt;/p&gt;
@@ -46,143 +111,143 @@
 @&lt;span class="pl-stj"&gt;SpringBootApplication&lt;/span&gt;
 &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Application&lt;/span&gt; {
 
-  &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-  &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;ResourceConfig&lt;/span&gt; {
+    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;ResourceConfig&lt;/span&gt; {
 
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt;() {
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;GreetingEndpoint&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;JacksonFeature&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
-    }
-  }
-
-  &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-  &lt;span class="pl-st"&gt;@Transactional&lt;/span&gt;
-  &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingService&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;JmsTemplate&lt;/span&gt; jmsTemplate;
-
-    &lt;span class="pl-st"&gt;@PersistenceContext&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;EntityManager&lt;/span&gt; entityManager;
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;, &lt;span class="pl-st"&gt;boolean&lt;/span&gt; &lt;span class="pl-v"&gt;fail&lt;/span&gt;) {
-      &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; greeting &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;(name);
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;persist(greeting);
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;jmsTemplate&lt;span class="pl-k"&gt;.&lt;/span&gt;convertAndSend(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, greeting);
-      &lt;span class="pl-k"&gt;if&lt;/span&gt; (fail) {
-        &lt;span class="pl-k"&gt;throw&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;simulated error&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-      }
-    }
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name, &lt;span class="pl-c1"&gt;false&lt;/span&gt;);
-    }
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;Collection&amp;lt;&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;findAll&lt;/span&gt;() {
-      &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager
-      .createQuery(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;select g from &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName() &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-      .getResultList();
-    }
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;find&lt;/span&gt;(&lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
-      &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;find(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, id);
-    }
-  }
-
-  &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-  &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-  &lt;span class="pl-st"&gt;@Produces&lt;/span&gt;({&lt;span class="pl-stj"&gt;MediaType&lt;/span&gt;&lt;span class="pl-c1"&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;APPLICATION_JSON&lt;/span&gt;})
-  &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingEndpoint&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
-
-    &lt;span class="pl-st"&gt;@POST&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;post&lt;/span&gt;(&lt;span class="pl-st"&gt;@QueryParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name);
-    }
-
-    &lt;span class="pl-st"&gt;@GET&lt;/span&gt;
-    &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/{id}&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;get&lt;/span&gt;(&lt;span class="pl-st"&gt;@PathParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
-      &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;find(id);
-    }
-  }
-
-  &lt;span class="pl-st"&gt;@Entity&lt;/span&gt;
-  &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt; &lt;span class="pl-s"&gt;implements&lt;/span&gt; &lt;span class="pl-e"&gt;Serializable&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Id&lt;/span&gt;
-    &lt;span class="pl-st"&gt;@GeneratedValue&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
-
-    &lt;span class="pl-st"&gt;@Override&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;toString&lt;/span&gt;() {
-      &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Greeting{&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
-      &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id=&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; id &lt;span class="pl-k"&gt;+&lt;/span&gt;
-      &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;, message='&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; message &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-cce"&gt;\'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
-      &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
-    }
-
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; message;
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;getMessage&lt;/span&gt;() {
-      &lt;span class="pl-k"&gt;return&lt;/span&gt; message;
-    }
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-      &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;message &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hi, &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; name &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
-    }
-
-    &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;() {
-    }
-  }
-
-  &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-  &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;TestCommandLineRunner&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
-
-    &lt;span class="pl-st"&gt;@PostConstruct&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;afterPropertiesSet&lt;/span&gt;() &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;Exception&lt;/span&gt; {
-      greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Phil&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-      greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Dave&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-      &lt;span class="pl-k"&gt;try&lt;/span&gt; {
-        greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Josh&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;);
-        } &lt;span class="pl-k"&gt;catch&lt;/span&gt; (&lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt; re) {
-          &lt;span class="pl-stj"&gt;Logger&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;getLogger(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName())&lt;span class="pl-k"&gt;.&lt;/span&gt;info(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;caught exception...&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt;() {
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;GreetingEndpoint&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;JacksonFeature&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
         }
-        greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;findAll()&lt;span class="pl-k"&gt;.&lt;/span&gt;forEach(&lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;::&lt;/span&gt;println);
-      }
     }
 
     &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MessageProcessor&lt;/span&gt; {
+    &lt;span class="pl-st"&gt;@Transactional&lt;/span&gt;
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingService&lt;/span&gt; {
 
-      &lt;span class="pl-st"&gt;@JmsListener&lt;/span&gt;(&lt;span class="pl-c1"&gt;destination&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-      &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;processGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-v"&gt;greeting&lt;/span&gt;) &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;JMSException&lt;/span&gt; {
-        &lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;.&lt;/span&gt;println(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;received message: &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; greeting);
-      }
+        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;JmsTemplate&lt;/span&gt; jmsTemplate;
+
+        &lt;span class="pl-st"&gt;@PersistenceContext&lt;/span&gt;
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;EntityManager&lt;/span&gt; entityManager;
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;, &lt;span class="pl-st"&gt;boolean&lt;/span&gt; &lt;span class="pl-v"&gt;fail&lt;/span&gt;) {
+            &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; greeting &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;(name);
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;persist(greeting);
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;jmsTemplate&lt;span class="pl-k"&gt;.&lt;/span&gt;convertAndSend(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, greeting);
+            &lt;span class="pl-k"&gt;if&lt;/span&gt; (fail) {
+                &lt;span class="pl-k"&gt;throw&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;simulated error&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+            }
+        }
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name, &lt;span class="pl-c1"&gt;false&lt;/span&gt;);
+        }
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;Collection&amp;lt;&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;findAll&lt;/span&gt;() {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager
+                    .createQuery(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;select g from &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName() &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
+                    .getResultList();
+        }
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;find&lt;/span&gt;(&lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;find(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, id);
+        }
+    }
+
+    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
+    &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+    &lt;span class="pl-st"&gt;@Produces&lt;/span&gt;({&lt;span class="pl-stj"&gt;MediaType&lt;/span&gt;&lt;span class="pl-c1"&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;APPLICATION_JSON&lt;/span&gt;})
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingEndpoint&lt;/span&gt; {
+
+        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
+
+        &lt;span class="pl-st"&gt;@POST&lt;/span&gt;
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;post&lt;/span&gt;(&lt;span class="pl-st"&gt;@QueryParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name);
+        }
+
+        &lt;span class="pl-st"&gt;@GET&lt;/span&gt;
+        &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/{id}&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;get&lt;/span&gt;(&lt;span class="pl-st"&gt;@PathParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;find(id);
+        }
+    }
+
+    &lt;span class="pl-st"&gt;@Entity&lt;/span&gt;
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt; &lt;span class="pl-s"&gt;implements&lt;/span&gt; &lt;span class="pl-e"&gt;Serializable&lt;/span&gt; {
+
+        &lt;span class="pl-st"&gt;@Id&lt;/span&gt;
+        &lt;span class="pl-st"&gt;@GeneratedValue&lt;/span&gt;
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
+
+        &lt;span class="pl-st"&gt;@Override&lt;/span&gt;
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;toString&lt;/span&gt;() {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Greeting{&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
+                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id=&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; id &lt;span class="pl-k"&gt;+&lt;/span&gt;
+                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;, message='&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; message &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-cce"&gt;\'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
+                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+        }
+
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; message;
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;getMessage&lt;/span&gt;() {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt; message;
+        }
+
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
+            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;message &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hi, &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; name &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+        }
+
+        &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;() {
+        }
+    }
+
+    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingServiceClient&lt;/span&gt; {
+
+        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
+        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
+
+        &lt;span class="pl-st"&gt;@PostConstruct&lt;/span&gt;
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;afterPropertiesSet&lt;/span&gt;() &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;Exception&lt;/span&gt; {
+            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Phil&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Dave&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+            &lt;span class="pl-k"&gt;try&lt;/span&gt; {
+                greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Josh&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;);
+            } &lt;span class="pl-k"&gt;catch&lt;/span&gt; (&lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt; re) {
+                &lt;span class="pl-stj"&gt;Logger&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;getLogger(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName())&lt;span class="pl-k"&gt;.&lt;/span&gt;info(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;caught exception...&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+            }
+            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;findAll()&lt;span class="pl-k"&gt;.&lt;/span&gt;forEach(&lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;::&lt;/span&gt;println);
+        }
+    }
+
+    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
+    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingMessageProcessor&lt;/span&gt; {
+
+        &lt;span class="pl-st"&gt;@JmsListener&lt;/span&gt;(&lt;span class="pl-c1"&gt;destination&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;processGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-v"&gt;greeting&lt;/span&gt;) &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;JMSException&lt;/span&gt; {
+            &lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;.&lt;/span&gt;println(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;received message: &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; greeting);
+        }
     }
 
     &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;(&lt;span class="pl-st"&gt;String&lt;/span&gt;[] &lt;span class="pl-v"&gt;args&lt;/span&gt;) {
-      &lt;span class="pl-stj"&gt;SpringApplication&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;run(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, args);
+        &lt;span class="pl-stj"&gt;SpringApplication&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;run(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, args);
     }
-  }
+}
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The rest of the code, &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/src/main/resources/application.properties"&gt;&lt;code&gt;application.properties&lt;/code&gt;&lt;/a&gt; and the &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/pom.xml"&gt;Maven build&lt;/a&gt;, are available online.&lt;/p&gt;
+&lt;p&gt;The complete  code listings, including the very sparce &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/src/main/resources/application.properties"&gt;&lt;code&gt;application.properties&lt;/code&gt;&lt;/a&gt; and the &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/pom.xml"&gt;Maven build&lt;/a&gt;, are available online. &lt;/p&gt;
 
 &lt;h2&gt;
 &lt;a id="user-content-jax-rs-with-jersey" class="anchor" href="#jax-rs-with-jersey" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JAX-RS with Jersey&lt;/h2&gt;
 
-&lt;p&gt;The example demonstrates JAX-RS integration (in this case, using &lt;a href="https://jersey.java.net/"&gt;Jersey 2.x&lt;/a&gt;) in the &lt;code&gt;demo.Application.GreetingEndpoint&lt;/code&gt;. Note how convenient it is to get it all working! The only thing to be weary of is that you need to specify a &lt;code&gt;ResourceConfig&lt;/code&gt; subclass to let Jersey know which components to register.&lt;/p&gt;
+&lt;p&gt;The example &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jersey"&gt;demonstrates Boot's new JAX-RS auto-configuration&lt;/a&gt; (in this case, using &lt;a href="https://jersey.java.net/"&gt;Jersey 2.x&lt;/a&gt;) in the &lt;code&gt;GreetingEndpoint&lt;/code&gt;. Note how convenient it is to get it all working! The only thing to be weary of is that you need to specify a &lt;code&gt;ResourceConfig&lt;/code&gt; subclass to let Jersey know which components to register.&lt;/p&gt;
 
 &lt;h2&gt;
 &lt;a id="user-content-global-transactions-with-jta" class="anchor" href="#global-transactions-with-jta" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Global Transactions with JTA&lt;/h2&gt;
 
-&lt;p&gt;It demonstrates global transactions (a.k.a., &lt;em&gt;XA&lt;/em&gt;) with the &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jta"&gt;new auto-configured JTA support&lt;/a&gt;. To do this, we've used the &lt;a href="http://www.atomikos.com/"&gt;Atomikos&lt;/a&gt; standalone JTA provider. We could have as easily used Bitronix, as well; both are auto-configured if you bring the appropriate starter along. In this example, in the &lt;code&gt;GreetingService&lt;/code&gt;, JMS and JPA work is done as part of a global transaction. We demonstrate this by creating 3 transactions and simulating a rollback on the third one. You should see printed to the console that there are two records that come back from the JDBC &lt;code&gt;javax.sql.DataSource&lt;/code&gt; data source and two records that are received from the embedded JMS &lt;code&gt;javax.jms.Destination&lt;/code&gt; destination.&lt;/p&gt;
+&lt;p&gt;It demonstrates global transactions with the &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jta"&gt;new auto-configured JTA support&lt;/a&gt;. JTA is a Java API for the X/Open XA protocol which lets multiple, compliant, transaction resources (like a message queue and a database) participate in a single transaction. To do this, we've used the &lt;a href="http://www.atomikos.com/"&gt;Atomikos&lt;/a&gt; standalone JTA provider. We could have as easily used Bitronix, as well; both are auto-configured if you bring the appropriate starter along. In this example, in the &lt;code&gt;GreetingService&lt;/code&gt;, JMS and JPA work is done as part of a global transaction. We demonstrate this by creating 3 transactions and simulating a rollback on the third one. You should see printed to the console that there are two records that come back from the JDBC &lt;code&gt;javax.sql.DataSource&lt;/code&gt; data source and two records that are received from the embedded JMS &lt;code&gt;javax.jms.Destination&lt;/code&gt; destination.&lt;/p&gt;
 
 &lt;h2&gt;
 &lt;a id="user-content-the-undertow-embedded-web-server" class="anchor" href="#the-undertow-embedded-web-server" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;The Undertow embedded web-server&lt;/h2&gt;
@@ -201,14 +266,14 @@
 &lt;h2&gt;
 &lt;a id="user-content-deployment" class="anchor" href="#deployment" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
 
-&lt;p&gt;Though I'm using a lot of fairly familiar Java EE APIs, this is still just typical Spring Boot, so by default you can run this application using &lt;code&gt;java -jar ee.jar&lt;/code&gt; or easily deploy it to process-centric &lt;a href="http://en.wikipedia.org/wiki/Platform_as_a_service"&gt;platforms-as-a-service&lt;/a&gt; offerings like - Heroku or &lt;a href="http://cloudfoundry.org"&gt;Cloud Foundry&lt;/a&gt;. If you want to deploy it to a standalone application server like (like Apache Tomcat, or Websphere, or anything in between), it's straightforward to convert the build into a &lt;code&gt;.war&lt;/code&gt; and deploy it accordingly to any Servlet 3 container.&lt;/p&gt;
+&lt;p&gt;Though this example uses a lot of fairly familiar Java EE APIs, this is still just typical Spring Boot, so by default you can run this application using &lt;code&gt;java -jar ee.jar&lt;/code&gt; or easily deploy it to process-centric &lt;a href="http://en.wikipedia.org/wiki/Platform_as_a_service"&gt;platforms-as-a-service&lt;/a&gt; offerings like - Heroku or &lt;a href="http://cloudfoundry.org"&gt;Cloud Foundry&lt;/a&gt;. If you want to deploy it to a standalone application server like (like Apache Tomcat, or Websphere, or anything in between), it's straightforward to convert the build into a &lt;code&gt;.war&lt;/code&gt; and deploy it accordingly to any Servlet 3 container.&lt;/p&gt;
 
 &lt;p&gt;If you deploy the application to a more classic application server, Spring Boot can take advantage of the AS's facilities, instead. For example, it's dead-simple to consume a JNDI-bound &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jms-jndi"&gt;JMS &lt;code&gt;ConnectionFactory&lt;/code&gt;&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-connecting-to-a-jndi-datasource"&gt;JDBC &lt;code&gt;DataSource&lt;/code&gt;&lt;/a&gt; or &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#_using_a_java_ee_managed_transaction_manager"&gt;JTA &lt;code&gt;UserTransaction&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;
 &lt;a id="user-content-spring-boot-12-choice-and-power" class="anchor" href="#spring-boot-12-choice-and-power" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring Boot 1.2: Choice &lt;em&gt;and&lt;/em&gt; Power&lt;/h2&gt;
 
-&lt;p&gt;I, personally, would question a lot of these APIs. Do you &lt;em&gt;really&lt;/em&gt; need distributed, multi-resource transactions? In today's distributed world, consider global transaction managers an architecture smell. Do you &lt;em&gt;really&lt;/em&gt; need to use JAX-RS when Spring offers a   richer, integrated Spring MVC-based stack complete with MVC, REST, HATEOAS, OAuth and websockets support? It might well be that you do, and - as always - the choice is yours. That's why this release is so cool! More power, more choice.&lt;/p&gt;
+&lt;p&gt;I, personally, would question a lot of these APIs. Do you &lt;em&gt;really&lt;/em&gt; need distributed, multi-resource transactions? In today's &lt;a href="http://www.eaipatterns.com/ramblings/18_starbucks.html"&gt;distributed world, consider global transaction managers are an architecture smell&lt;/a&gt;. Do you &lt;em&gt;really&lt;/em&gt; need to use JAX-RS when Spring offers a richer, integrated Spring MVC-based stack complete with MVC, REST, HATEOAS, OAuth and websockets support? JPA's a nice API for talking to a SQL-based &lt;code&gt;javax.sql.DataSource&lt;/code&gt;, but Spring Data repositories (which include support for JPA, of course, but &lt;em&gt;also&lt;/em&gt; for Cassandra, MongoDB, Redis, CouchBase, and an increasingly long list of alternative technologies) reduce much of the boilerplate to a simple interface definition for the common cases. So, do you really need all of this? It might well be that you do, and - as always - the choice is yours. That's why this release is so cool! More power, more choice. &lt;/p&gt;
 
 &lt;h2&gt;
 &lt;a id="user-content-what-else" class="anchor" href="#what-else" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What Else?&lt;/h2&gt;
@@ -809,34 +874,6 @@
 &lt;p&gt;[5] &lt;a href="https://spring.io/blog/2014/10/27/spring-integration-4-1-rc1-released"&gt;Spring Integration 4.1 Release Candidate Announcement&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;[6] &lt;a href="https://spring.io/blog/2014/10/23/spring-amqp-1-4-rc1-released"&gt;Spring AMQP 1.4 Release Candidate Announcement&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security OAuth 2.0.4.RELEASE Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/11/spring-security-oauth-2-0-4-release-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Dave Syer</name>
-    </author>
-    <id>tag:spring.io,2014-11-11:1818</id>
-    <updated>2014-11-11T13:48:00Z</updated>
-    <content type="html">&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Spring Security OAuth&lt;/a&gt; 2.0.4.RELEASE is available now in the usual repositories. It's a bug fix release, so upgrading is recommended, but there is also a small set of new features:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The &lt;code&gt;OAuth2Request&lt;/code&gt; (and hence &lt;code&gt;OAuth2Authentication&lt;/code&gt;) can now be
-queried explicitly to find the grant type for the associated
-token. If the token is being refreshed the grant type in the
-&lt;code&gt;OAuth2Request&lt;/code&gt; presented to a &lt;code&gt;TokenEnhancer&lt;/code&gt; is the
-original grant type, not "refresh_token".&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;The client authorities are exposed in the "/check_token" endpoint&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Password grants are more flexible and open to extension because both client and server can add additional parameters to the request. A custom &lt;code&gt;AuthenticationManager&lt;/code&gt; on the server side should still expect a &lt;code&gt;UsernamePasswordAuthenticationToken&lt;/code&gt;, but the additional parameters will be available in the &lt;code&gt;AuthenticationDetails&lt;/code&gt;. Multi-factor authentication for mobile devices could be implemented in this way, for instance.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Keystore support for JWT token signing and verification. 
-User provides a Resource and a password and can then lift the
-keys out of the store by name. As long as they are RSA keys they
-can be injected into a &lt;code&gt;JwtAccessTokenConverter&lt;/code&gt; (using a new
-setter).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were numerous community contributions to this release, for which many thanks!&lt;/p&gt;</content>
   </entry>
 </feed>
 

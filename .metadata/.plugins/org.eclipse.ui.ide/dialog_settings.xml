@@ -77,9 +77,6 @@
 		<item value="org.eclipse.m2e.feature:1.5.0.20140606-0033"/>
 		<item value="org.eclipse.m2e.logback.feature:1.5.0.20140606-0033"/>
 		<item value="org.eclipse.m2e.wtp.feature:1.1.0.20140611-1646"/>
-		<item value="org.eclipse.m2e.wtp.jaxrs.feature:1.1.0.20140611-1646"/>
-		<item value="org.eclipse.m2e.wtp.jpa.feature:1.1.0.e43-20140611-1648"/>
-		<item value="org.eclipse.m2e.wtp.jsf.feature:1.1.0.20140611-1646"/>
 		<item value="org.eclipse.mylyn.bugzilla_feature:3.13.0.v20140830-0030"/>
 		<item value="org.eclipse.mylyn.commons.identity:1.5.0.v20140702-2248"/>
 		<item value="org.eclipse.mylyn.commons.notifications:1.5.0.v20140702-2248"/>
@@ -141,6 +138,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Designer1\Capstone_Project_2"/>
 			<item value="C:\Users\JIC\Capstone_Project_2"/>
 			<item value="C:\Users\JIC\Downloads\Capstone_Project_2-master"/>
 		</list>
