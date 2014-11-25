@@ -48,9 +48,9 @@
 			<div class="lst_npr">
 				<table>
 					<tr>
-						<th>Title</th>
+						<th style="width:250px;">Title</th>
 						<th>Category</th>
-						<th>Writer</th>
+						<th style="width:120px;">UserName</th>
 					</tr>
 					<tr>
 						<td>Time Capsule</td>
@@ -97,8 +97,8 @@
 		<div class="lst_bpr">
 			<table>
 				<tr>
-					<th>Title</th>
-					<th>UserName</th>
+					<th style="width:250px;">Title</th>
+					<th style="width:120px;">UserName</th>
 					<th>Count</th>
 					<th>Review Count</th>
 					<th>Like</th>
