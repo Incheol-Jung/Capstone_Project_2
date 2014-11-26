@@ -16,8 +16,11 @@
 </head>
 <style>
 	.header{width:100%;font-size:12px;padding:15px;text-align:right;color:#fff;background-color:#000;}
-	.left_side{float:left;width:300px;height:100%;background-color:green;padding:20px}
-	.left_side .lst_cate{list-style: none;padding: 0px;line-height: 30px;}
+	.left_side{float:left;width:300px;height:100%;background-color:#4c4c4c;padding-top:20px;color:#fff}
+	.left_side .sch{margin-left:20px;}
+	.left_side .lst_cate{list-style:none;padding:0px;line-height:30px;margin-top:20px;}
+	.left_side .lst_cate li{padding-left:20px;line-height:40px;font-size:16px;border-bottom:1px solid;}
+	.left_side .lst_cate li:hover{background-color:#fff;color:#000;}
 	.right_side{float:right;width:900px;background-color:pink;padding:20px;}
 	.right_side .lst_npr{float:left;background-color:gray;padding:15px;}
 	.right_side .lst_buser{float:left;margin-left:20px;background-color:red;padding:15px;}
