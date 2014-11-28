@@ -5,7 +5,11 @@ import java.util.Map;
 
 
 
+
+
 import org.mybatis.spring.support.SqlSessionDaoSupport;
+
+import com.incheol.myapp.dao.Userdao;
 
 public class Category extends SqlSessionDaoSupport{
 	private int categoryID;
@@ -24,7 +28,8 @@ public class Category extends SqlSessionDaoSupport{
 		this.categoryName = categoryName;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Category> getcategorylist(){
-		return (List<Category>)getSqlSession().selectList("Category.getcategorylist");
+		return getSqlSession().selectList("Category.getcategorylist");
 	}
 }
