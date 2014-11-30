@@ -6,7 +6,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
@@ -20,10 +19,21 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 		<beans:property name="contentType" value="text/html; charset=UTF-8"/>
+		<beans:property name="order" value="2"/>
 	</beans:bean>
 	
+	<!-- tiles3를 이용하기 위한 설정  -->
+	<beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
+        <beans:property name="order" value="1"/>
+    </beans:bean>
+    <!-- ViewResolver설정 -->
+    <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+        <beans:property name="definitions">
+            <beans:list>
+                 <beans:value>/WEB-INF/tiles/tiles-layout.xml</beans:value>
+            </beans:list>
+        </beans:property>
+    </beans:bean>
 	<context:component-scan base-package="com.incheol.myapp" />
-	
-	
-	
 </beans:beans>

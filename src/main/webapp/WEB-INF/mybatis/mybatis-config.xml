@@ -6,16 +6,4 @@
   <setting name="useGeneratedKeys" value="true" />
   <setting name="defaultExecutorType" value="REUSE" />
  </settings>
- <!-- 
- <mappers>
-  <mapper resource="../sqlMap/sqlMapper-user.xml" />
- </mappers> 
- -->
- <!-- 
- <typeAliases>
-    <typeAlias alias="User" type="com.touchme.web.model.User" />
-    <typeAlias alias="Ad" type="com.touchme.web.model.Ad" />
-    <typeAlias alias="Point" type="com.touchme.web.model.Point" />
- </typeAliases>
-  -->
 </configuration>

@@ -27,7 +27,7 @@
     
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">     
       <property name="dataSource" ref="dataSource" />                                         <!-- //데이터베이스 정보 -->
-      <property name="mapperLocations" value="/WEB-INF/mybatis/map/*.xml" />  <!-- //매퍼 xml이 있는 경로 정의 -->
+      <property name="mapperLocations" value="classpath:com/incheol/myapp/mybatisMapper/*.xml" />  <!-- //매퍼 xml이 있는 경로 정의 -->
       <property name="configLocation" value="/WEB-INF/mybatis/mybatis-config.xml" />          <!-- //mybatis config설정 이있는 xml 참조하는 곳 추후 포스팅할때 설명 -->
       <property name="transactionFactory">                                                    <!-- //트랜젝션에 관련된 내용 추후 설명 -->
           <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" />

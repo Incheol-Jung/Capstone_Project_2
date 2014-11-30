@@ -217,4 +217,13 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 
     }
     
+    //Tiles Test
+  	@RequestMapping(value = "/tilesTest")
+      public String tilesTest(HttpServletRequest request, Model model) {
+      	System.out.println("test");
+      	
+      	//tiles/{1}/{2}/{3} 형식으로 계층을 만들어가며 페이지 구성을 할 수 있음.
+          return "tiles/main";
+
+      }
 }
