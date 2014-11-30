@@ -27,9 +27,4 @@ public class Category extends SqlSessionDaoSupport{
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
-	
-	@SuppressWarnings("unchecked")
-	public List<Category> getcategorylist(){
-		return getSqlSession().selectList("Category.getcategorylist");
-	}
 }
