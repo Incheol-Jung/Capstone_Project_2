@@ -6,9 +6,6 @@
     xsi:schemaLocation="
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    
-    
-    
   
     <bean id="propertyPlaceholderConfigurer"
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -39,18 +36,18 @@
     </bean>
     
 <!-- =========================== DAO DEFINITIONS : IBATIS IMPLEMENTATIONS ============ -->    
-	<bean id="RegisterService" class="com.incheol.myapp.service.RegisterService" />
-    <bean id="MainService" class="com.incheol.myapp.service.MainService" />   
+	
     <bean id="UserDao" class="com.incheol.myapp.dao.Userdao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="Categorydao" class="com.incheol.myapp.dao.Categorydao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
-    <bean id="Board" class="com.incheol.myapp.vo.Board" >
-    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
-    <bean id="Category" class="com.incheol.myapp.vo.Category" >
-    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+    <bean id="Board" class="com.incheol.myapp.vo.Board">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+   <!--  
+   <bean id="RegisterService" class="com.incheol.myapp.service.RegisterService" />
+   <bean id="MainService" class="com.incheol.myapp.service.MainService" /> 
+    -->
 </beans>
