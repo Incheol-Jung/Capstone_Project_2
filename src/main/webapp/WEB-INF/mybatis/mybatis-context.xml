@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    
+    
+  
+    <bean id="propertyPlaceholderConfigurer"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <value>/WEB-INF/mybatis/jdbc.properties</value>   <!-- //jdbc프로퍼티를 읽어오겠단 말(db정보) -->
+        </property>
+    </bean>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+      destroy-method="close">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver" /> <!-- jdbc로 읽어온 정보를 매핑시켜 가지고 있는 빈 -->
+      <property name="url" value="${jdbc.url}" />
+      <property name="username" value="${jdbc.username}" />
+      <property name="password" value="${jdbc.password}" />
+    </bean>
+    
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">     
+      <property name="dataSource" ref="dataSource" />                                         <!-- //데이터베이스 정보 -->
+      <property name="mapperLocations" value="classpath:com/incheol/myapp/mybatisMapper/*.xml" />  <!-- //매퍼 xml이 있는 경로 정의 -->
+      <property name="configLocation" value="/WEB-INF/mybatis/mybatis-config.xml" />          <!-- //mybatis config설정 이있는 xml 참조하는 곳 추후 포스팅할때 설명 -->
+      <property name="transactionFactory">                                                    <!-- //트랜젝션에 관련된 내용 추후 설명 -->
+          <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" />
+          </property>
+    </bean>
+    
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+      <constructor-arg index="0" ref="sqlSessionFactory" /> 
+    </bean>
+    
+<!-- =========================== DAO DEFINITIONS : IBATIS IMPLEMENTATIONS ============ -->    
+	<bean id="RegisterService" class="com.incheol.myapp.service.RegisterService" />
+    <bean id="MainService" class="com.incheol.myapp.service.MainService" />   
+    <bean id="UserDao" class="com.incheol.myapp.dao.Userdao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    <bean id="Categorydao" class="com.incheol.myapp.dao.Categorydao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    <bean id="Board" class="com.incheol.myapp.vo.Board" >
+    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+    <bean id="Category" class="com.incheol.myapp.vo.Category" >
+    	<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+</beans>
