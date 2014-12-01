@@ -11,7 +11,6 @@ import com.incheol.myapp.vo.Category;
 public class Categorydao extends SqlSessionDaoSupport{
 	
 	public List<Category> getcategorylist(){
-		System.out.println("dao");
 		return (List<Category>)getSqlSession().selectList("Category.getcategorylist");
 	}
 }

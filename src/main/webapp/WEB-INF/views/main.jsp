@@ -118,6 +118,7 @@
 				<thead>
 					<tr>
 						<th style="width:250px;">Title</th>
+						<th>Category</th>
 						<th style="width:120px;">UserName</th>
 						<th>Count</th>
 						<th>Review Count</th>
@@ -127,6 +128,7 @@
 				<tbody>
 					<tr>
 						<td>Capstone Project2</td>
+						<td>Mobile Product</td>
 						<td>steve</td>
 						<td>80</td>
 						<td>120</td>
@@ -134,6 +136,7 @@
 					</tr>
 					<tr>
 						<td>Capstone Project2</td>
+						<td>Mobile Product</td>
 						<td>steve</td>
 						<td>80</td>
 						<td>120</td>
@@ -141,6 +144,7 @@
 					</tr>
 					<tr>
 						<td>Capstone Project2</td>
+						<td>Mobile Product</td>
 						<td>steve</td>
 						<td>80</td>
 						<td>120</td>

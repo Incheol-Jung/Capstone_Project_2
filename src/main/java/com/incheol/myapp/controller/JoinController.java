@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.incheol.myapp.HomeController;
+import com.incheol.myapp.dao.Boarddao;
 import com.incheol.myapp.dao.Categorydao;
 import com.incheol.myapp.dao.Userdao;
 import com.incheol.myapp.vo.*;
@@ -34,8 +35,8 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     @Resource(name="UserDao")                 //위의 xml에서 <bean id="userDaoImpl" class="com.fureun.mybatis.UserDaoImpl"> 와 같이 설정한                         //DB 연결하는 빈을 설정 아래와 같이 봐야한다.
     private Userdao userDao;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
     
-    @Resource(name="Board")                 //위의 xml에서 <bean id="userDaoImpl" class="com.fureun.mybatis.UserDaoImpl"> 와 같이 설정한                         //DB 연결하는 빈을 설정 아래와 같이 봐야한다.
-    private Board Board;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
+    @Resource(name="Boarddao")                 //위의 xml에서 <bean id="userDaoImpl" class="com.fureun.mybatis.UserDaoImpl"> 와 같이 설정한                         //DB 연결하는 빈을 설정 아래와 같이 봐야한다.
+    private Boarddao Board;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
     
     @Resource(name="Categorydao")                 //위의 xml에서 <bean id="userDaoImpl" class="com.fureun.mybatis.UserDaoImpl"> 와 같이 설정한                         //DB 연결하는 빈을 설정 아래와 같이 봐야한다.
     private Categorydao Category;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.

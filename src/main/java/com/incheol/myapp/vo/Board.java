@@ -19,6 +19,7 @@ public class Board extends SqlSessionDaoSupport{
 	private String content;
 	private int count;
 	private int r_count;
+	private int l_count;
 	
 	public int getBoardID() {
 		return boardID;
@@ -62,23 +63,10 @@ public class Board extends SqlSessionDaoSupport{
 	public void setR_count(int r_count) {
 		this.r_count = r_count;
 	}
-	
-	public List<Board> getboardlist(Map<String, String> map){
-		return (List<Board>)getSqlSession().selectList("Board.getboardlist",map);
+	public int getL_count() {
+		return l_count;
 	}
-	
-	public int getboardtotal(Map<String, String> map){
-		return (Integer)getSqlSession().selectOne("Board.getboardtotal",map);
-	}
-	
-	public void addboard(Board board){
-		getSqlSession().selectOne("Board.addboard",board);
-	}
-	
-	public Board getboard(int boardid){
-		return (Board)getSqlSession().selectOne("Board.getboard",boardid);
-	}
-	public void editboard(Board board){
-		getSqlSession().selectOne("Board.editboard",board);
+	public void setL_count(int l_count) {
+		this.l_count = l_count;
 	}
 }

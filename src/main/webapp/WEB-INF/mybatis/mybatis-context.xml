@@ -43,6 +43,9 @@
     <bean id="Categorydao" class="com.incheol.myapp.dao.Categorydao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
+    <bean id="Boarddao" class="com.incheol.myapp.dao.Boarddao">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
     <bean id="Board" class="com.incheol.myapp.vo.Board">                             <!-- //DB 연결하는 빈을 설정 아래와 같이 봐야한다. -->
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>

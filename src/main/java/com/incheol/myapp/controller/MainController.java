@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.incheol.myapp.service.MainService;
+import com.incheol.myapp.vo.Board;
 import com.incheol.myapp.vo.Category;
 
 @Controller
@@ -24,11 +25,15 @@ public class MainController {
 	@RequestMapping(value = "/main")
 	public String default_main(HttpServletRequest request, Model model) {
 		
-		//left side category
-		System.out.println("e");
-		List<Category> cate_list = MainService.Load_Category(); // to get user list.
-		//int i = MainService.Load_Category();
-		//model.addAttribute("page_list",cate_list);
+		//to get user list on left side category
+		List<Category> cate_list = MainService.Load_Category();
+		
+		//to get newest category
+		List<Board> newest_blist = MainService.Load_newest_board_list(5); //you can choice how many show newest board. now i just fixed 5
+		
+		//to get best category sort by count
+		List<Board> best_blist = MainService.Load_newest_board_list(5); //you can choice how many show best board. now i just fixed 5
+		
 		
 	    return "main";
 	

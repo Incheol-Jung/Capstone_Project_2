@@ -2,7 +2,7 @@ package com.incheol.myapp.vo;
 
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
-public class User extends SqlSessionDaoSupport{
+public class UserInfo extends SqlSessionDaoSupport{
 	public int userID;
 	public String userEmail;
     public String userPassword;

@@ -1,10 +1,5 @@
 package com.incheol.myapp.vo;
 
-import java.util.List;
-import java.util.Map;
-
-
-
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 public class Review extends SqlSessionDaoSupport{

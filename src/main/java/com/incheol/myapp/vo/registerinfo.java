@@ -5,6 +5,7 @@ public class registerinfo{
 	private String userName;
 	private String userEmail;
 	private String userPassword ;
+	
 	public String getUserName() {
 		return userName;
 	}
