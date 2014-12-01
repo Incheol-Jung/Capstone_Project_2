@@ -37,7 +37,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     private Board Board;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
     
     @Resource(name="Category")                 //위의 xml에서 <bean id="userDaoImpl" class="com.fureun.mybatis.UserDaoImpl"> 와 같이 설정한                         //DB 연결하는 빈을 설정 아래와 같이 봐야한다.
-    private Category Category;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
+    private Categorydao Category;              // 곳의 ID 이렇게 리소스를 주면 자동으로 객체가 주입이 된다.
     
     
     
