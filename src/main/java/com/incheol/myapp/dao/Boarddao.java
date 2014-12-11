@@ -7,9 +7,14 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
 import com.incheol.myapp.vo.Board;
+import com.incheol.myapp.vo.customized_board;
 
 @Repository
 public class Boarddao extends SqlSessionDaoSupport{
+	
+	public List<customized_board> get_newest_boardlist1(int newest_num){
+		return (List<customized_board>)getSqlSession().selectList("Board.get_newest_boardlist1",newest_num);
+	}
 	
 	public List<Board> get_newest_boardlist(int newest_num){
 		return (List<Board>)getSqlSession().selectList("Board.get_newest_boardlist",newest_num);

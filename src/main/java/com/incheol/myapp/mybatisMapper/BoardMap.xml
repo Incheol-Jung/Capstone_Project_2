@@ -2,16 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board"> <!-- 이쿼리를 이용하기 위해선 namespace명.id로 접근하면 된다. -->
     
-    <select id="get_newest_boardlist" parameterType="Integer" resultType="com.incheol.myapp.vo.Board">
-    	select * from board 
-    		order by boardID
-    		limit #{newest_num}
+    <select id="get_newest_boardlist" parameterType="Integer" resultType="com.incheol.myapp.vo.customized_board">
+    	select * from board , user , category
+	    	where board.userID = user.userID and board.categoryID = category.categoryID
+	    	order by boardID desc
+	    	limit #{newest_num}
     </select>
     
-    <select id="get_best_boardlist" parameterType="Integer" resultType="com.incheol.myapp.vo.Board">
-    	select * from board 
-    		order by count
-    		limit #{newest_num}
+    <select id="get_best_boardlist" parameterType="Integer" resultType="com.incheol.myapp.vo.customized_board">
+    	select * from board , user , category
+	    	where board.userID = user.userID and board.categoryID = category.categoryID
+	    	order by r_count desc
+	    	limit #{newest_num} 
     </select>
     
     <select id="getboardlist" parameterType="java.util.Map" resultType="com.incheol.myapp.vo.Board">

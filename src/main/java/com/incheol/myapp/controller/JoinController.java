@@ -156,7 +156,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     		
     		model.addAttribute("title",temp_board.getTitle());
         	model.addAttribute("content",temp_board.getContent());
-        	model.addAttribute("categoryid",temp_board.getcateID());
+        	model.addAttribute("categoryid",temp_board.getCategoryID());
     	}
     	
     	model.addAttribute("boardid",boardid);
@@ -186,8 +186,8 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     		boardidcheck = false;
     	}
     	
-    	temp_board.setcateID(categoryid);
-    	temp_board.setB_userID(userid);
+    	temp_board.setCategoryID(categoryid);
+    	temp_board.setUserID(userid);
     	temp_board.setTitle(title);
     	temp_board.setContent(content);
     	

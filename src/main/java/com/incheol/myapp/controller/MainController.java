@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import com.incheol.myapp.service.MainService;
 import com.incheol.myapp.vo.Board;
 import com.incheol.myapp.vo.Category;
+import com.incheol.myapp.vo.customized_board;
 
 @Controller
 @SessionAttributes({"userEmail", "userPassword"})
@@ -33,7 +34,7 @@ public class MainController {
 		
 		//to get best category sort by count
 		List<Board> best_blist = MainService.Load_newest_board_list(5); //you can choice how many show best board. now i just fixed 5
-		
+		model.addAttribute("best_blist",best_blist);
 		
 	    return "main";
 	

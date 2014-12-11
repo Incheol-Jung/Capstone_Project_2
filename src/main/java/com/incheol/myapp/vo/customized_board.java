@@ -7,14 +7,18 @@ import java.util.Map;
 
 
 
+
+
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 import com.incheol.myapp.dao.Userdao;
 
-public class Board extends SqlSessionDaoSupport{
+public class customized_board extends SqlSessionDaoSupport{
 	private int boardID;
 	private int categoryID;
+	private String categoryName;
 	private int userID;
+	private String userName;
 	private String title;
 	private String content;
 	private int count;
@@ -33,11 +37,23 @@ public class Board extends SqlSessionDaoSupport{
 	public void setCategoryID(int categoryID) {
 		this.categoryID = categoryID;
 	}
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
 	public int getUserID() {
 		return userID;
 	}
 	public void setUserID(int userID) {
 		this.userID = userID;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getTitle() {
 		return title;
@@ -69,6 +85,8 @@ public class Board extends SqlSessionDaoSupport{
 	public void setL_count(int l_count) {
 		this.l_count = l_count;
 	}
+	
+	
 	
 	
 }

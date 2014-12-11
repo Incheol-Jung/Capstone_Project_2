@@ -64,21 +64,13 @@
 						</tr>
 					</thead>
 					<tbody>
+						<c:forEach var="customized_board" items="${best_blist2}">
 						<tr>
-							<td>Time Capsule</td>
-							<td>Web application</td>
-							<td>bluesky6096</td>
+							<td>${customized_board.getTitle()}</td>
+							<td>${customized_board.getCategoryName()}</td>
+							<td>${customized_board.getUserName()}</td>
 						</tr>
-						<tr>
-							<td>Time Capsule</td>
-							<td>Web application</td>
-							<td>bluesky6096</td>
-						</tr>
-						<tr>
-							<td>Time Capsule</td>
-							<td>Web application</td>
-							<td>bluesky6096</td>
-						</tr>
+						</c:forEach>
 					</tbody>
 				</table>
 			</div>

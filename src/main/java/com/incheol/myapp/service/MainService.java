@@ -10,6 +10,7 @@ import com.incheol.myapp.dao.Boarddao;
 import com.incheol.myapp.dao.Categorydao;
 import com.incheol.myapp.vo.Board;
 import com.incheol.myapp.vo.Category;
+import com.incheol.myapp.vo.customized_board;
 
 @Service
 public class MainService {
@@ -30,9 +31,10 @@ public class MainService {
 		return boarddao.get_newest_boardlist(newest_num);
 	}
 	
-	//to get newest_board list
-		public List<Board> Load_best_board_list(int best_num){
-			return boarddao.get_best_boardlist(best_num);
-		}
+	//to get best_board list
+	public List<Board> Load_best_board_list(int best_num){
+		return boarddao.get_best_boardlist(best_num);
+	}
+	
 	
 }
