@@ -1,17 +1,6 @@
 package com.incheol.myapp.vo;
 
-import java.util.List;
-import java.util.Map;
-
-
-
-
-
-
-
 import org.mybatis.spring.support.SqlSessionDaoSupport;
-
-import com.incheol.myapp.dao.Userdao;
 
 public class customized_board extends SqlSessionDaoSupport{
 	private int boardID;

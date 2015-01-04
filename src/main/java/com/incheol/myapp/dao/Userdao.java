@@ -6,28 +6,17 @@ import java.util.Map;
 
 
 
+
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
+import com.incheol.myapp.vo.customized_user;
+
 public class Userdao extends SqlSessionDaoSupport{
-	public String userEmail;
-    public String userPassword;
 
-	public String getUserEmail() {
-		return userEmail;
-	}
-
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
-	}
-
-	public String getUserPassword() {
-		return userPassword;
-	}
-
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
-	}
-
+	public List<customized_user> get_Best_userlist(int best_num){
+    	return (List<customized_user>)getSqlSession().selectList("userDao.get_Best_userlist",best_num);
+    }
+	
 	public String getLoginResult(Map<String, String> map) {
         // TODO Auto-generated method stub
         return (String)getSqlSession().selectOne("userDao.getLoginResult",map); // userDao는 xml매퍼파일의 네임스페이스, getLoginResult
@@ -49,6 +38,4 @@ public class Userdao extends SqlSessionDaoSupport{
 	public List<Userdao> getuserlist(){
 		return (List<Userdao>)getSqlSession().selectList("userDao.getuserlist");
 	}
-	
-    
 }

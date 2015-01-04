@@ -4,7 +4,7 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 public class User extends SqlSessionDaoSupport{
 	private int userID;
-	private String username;
+	private String userName;
 	private String userEmail;
 	private String userPWD;
 	
@@ -15,10 +15,10 @@ public class User extends SqlSessionDaoSupport{
 		this.userID = userID;
 	}
 	public String getUsername() {
-		return username;
+		return userName;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsername(String userName) {
+		this.userName = userName;
 	}
 	public String getUserEmail() {
 		return userEmail;

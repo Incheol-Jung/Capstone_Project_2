@@ -45,11 +45,9 @@
 	<div class="left_side">
 		<input type="text" class="sch"><button class="btn_sch">Search</button>
 		<ul class="lst_cate">
-			<li>Web Project</li>
-			<li>Hardware</li>
-			<li>Software</li>
-			<li>Mobile application</li>
-			<li>thesis</li>
+			<c:forEach var="Category" items="${cate_list}">
+			<li>${Category.getCategoryName()}</li>
+			</c:forEach>
 		</ul>
 	</div>
 	<div class="right_side">
@@ -64,12 +62,12 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="customized_board" items="${best_blist2}">
-						<tr>
-							<td>${customized_board.getTitle()}</td>
-							<td>${customized_board.getCategoryName()}</td>
-							<td>${customized_board.getUserName()}</td>
-						</tr>
+						<c:forEach var="customized_board" items="${newest_blist}">
+							<tr>
+								<td>${customized_board.getTitle()}</td>
+								<td>${customized_board.getCategoryName()}</td>
+								<td>${customized_board.getUserName()}</td>
+							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
@@ -85,21 +83,13 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>bluesky6096</td>
-							<td>Silver</td>
-							<td>584</td>
-						</tr>
-						<tr>
-							<td>jic761</td>
-							<td>Gold</td>
-							<td>96</td>
-						</tr>
-						<tr>
-							<td>dkfdnd80</td>
-							<td>silver</td>
-							<td>100</td>
-						</tr>
+						<c:forEach var="customized_user" items="${best_ulist}">
+							<tr>
+								<td>${customized_user.getUserName()}</td>
+								<td>${customized_user.getLevelName()}</td>
+								<td>${customized_user.getC_count()}</td>
+							</tr>
+						</c:forEach>
 					</tbody>
 				</table>
 			</div>
@@ -118,30 +108,16 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Capstone Project2</td>
-						<td>Mobile Product</td>
-						<td>steve</td>
-						<td>80</td>
-						<td>120</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>Capstone Project2</td>
-						<td>Mobile Product</td>
-						<td>steve</td>
-						<td>80</td>
-						<td>120</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>Capstone Project2</td>
-						<td>Mobile Product</td>
-						<td>steve</td>
-						<td>80</td>
-						<td>120</td>
-						<td>50</td>
-					</tr>
+					<c:forEach var="customized_board" items="${best_blist}">
+						<tr>
+							<td>${customized_board.getTitle()}</td>
+							<td>${customized_board.getCategoryName()}</td>
+							<td>${customized_board.getUserName()}</td>
+							<td>${customized_board.getCount()}</td>
+							<td>${customized_board.getR_count()}</td>
+							<td>${customized_board.getL_count()}</td>
+						</tr>
+					</c:forEach>
 				</tbody>
 			</table>
 		</div>
