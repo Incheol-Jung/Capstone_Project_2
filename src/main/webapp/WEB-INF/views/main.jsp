@@ -36,7 +36,7 @@
 	<div id="container"> 
 	<div class="header">
 		<% if( session.getAttribute("userEmail") != null ) { %>
-			Hello ${username}.&nbsp;
+			Hello ${userName}.&nbsp;
 		<%} else{ %>
 			LOGIN &nbsp;
 		<% } %> 

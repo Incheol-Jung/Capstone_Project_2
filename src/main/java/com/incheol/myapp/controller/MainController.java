@@ -25,20 +25,22 @@ public class MainController {
 	@RequestMapping(value = "/main")
 	public String default_main(HttpServletRequest request, Model model) {
 		
-		//to get user list on left side category
+		// to get user list on left side category
 		List<Category> cate_list = MainService.Load_Category();
 		model.addAttribute("cate_list",cate_list);
 		
-		//to get newest category
+		// to get newest board list sort by boardid
 		List<Board> newest_blist = MainService.Load_newest_board_list(5); //you can choice how many show newest board. now i just fixed 5
 		model.addAttribute("newest_blist",newest_blist);
 		
-		//to get best category sort by count
+		// to get best board list sort by count
 		List<Board> best_blist = MainService.Load_newest_board_list(5); //you can choice how many show best board. now i just fixed 5
 		model.addAttribute("best_blist",best_blist);
 		
+		// to get best user sort by c_count
 		List<customized_user> best_ulist = MainService.Load_best_user_list(5);
 		model.addAttribute("best_ulist",best_ulist);
+		
 	    return "main";
 	
 	}

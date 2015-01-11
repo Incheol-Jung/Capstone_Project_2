@@ -19,7 +19,7 @@ public class Userdao extends SqlSessionDaoSupport{
 	
 	public String getLoginResult(Map<String, String> map) {
         // TODO Auto-generated method stub
-        return (String)getSqlSession().selectOne("userDao.getLoginResult",map); // userDao는 xml매퍼파일의 네임스페이스, getLoginResult
+        return (String)getSqlSession().selectOne("userDao.getLoginResult",map);   // userDao는 xml매퍼파일의 네임스페이스, getLoginResult
                                                                                   // 쿼리를 설정한 ID이다. 그리고 파라미터를 map으로 넣었다.         
     }
 	

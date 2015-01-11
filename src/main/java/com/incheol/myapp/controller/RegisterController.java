@@ -78,12 +78,6 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
         return "userlist";
     }
     
-    @RequestMapping(value = "/temp")
-    public String temp(Model model) {
-    	model.addAttribute("result","ajax_test");
-        return "login";
-    }
-    
     @RequestMapping(value = "/ajax_temp")
     public Model ajax_temp(Model model) {
     	model.addAttribute("result","ajax_test");

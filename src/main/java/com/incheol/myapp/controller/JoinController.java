@@ -43,45 +43,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     
     //Git Fucking!!
     
-    @RequestMapping(value = "/login"  ,method=RequestMethod.GET)
-    public String main(
-    		@RequestParam("userEmail") String userEmail,
-    		@RequestParam("userPassword") String userPassword,
-    		Model model,HttpSession sessionObj) {
-        
-    	System.out.println("userEmail: " + userEmail);
-    	System.out.println("password: " + userPassword);
-    	
-    	sessionObj.setAttribute("userEmail", userEmail);
-    	sessionObj.setAttribute("password1", userPassword);
-    	
-    	Map<String, String> map = new HashMap<String, String>();   //임의로 맵을 만들어서
-        map.put("userEmail", userEmail);                                     //쿼리의 ${id}의 id와 같이 이름을 주고 값을 넣었다.
-        map.put("userPassword", userPassword);
-        
-        
-        
-        if(userDao.getLoginIDResult(userEmail) == 1){                  //이렇게 구현을 한다음 파라미터로 map을 넘겨서 결과를 받아온다.
-            System.out.println("존재하는 ID 입니다.");                      // 아이디와 패스워드가 일치하면 카운트가 1이 나올것이므로 
-            String username = userDao.getLoginResult(map);	
-            if(username != null){
-            		System.out.println("로그인 성공!!"); 
-
-                	sessionObj.setAttribute("username", username);
-
-            		//return "board";
-            		return "redirect:/board";
-            	}else{
-            		System.out.println("비밀번호가 일치하지 않습니다."); 
-            		return "login"; 
-            	}
-        } else {
-            System.out.println("존재하지 않는 ID 입니다.");
-            return "login"; 
-        }
-    	
-        
-    }
+    
     
     @RequestMapping(value = "/board" , method = RequestMethod.GET)
     public String showuserlist(HttpServletRequest request, Model model,HttpSession sessionObj) {
